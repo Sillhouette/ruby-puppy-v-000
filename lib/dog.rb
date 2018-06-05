@@ -1,10 +1,10 @@
 class Dog
 
-  attr_accessor :name
-
   @@dogs = [];
 
-  initialize(name)
+  attr_accessor :name
+
+  def initialize(name)
     @name = name;
 
     @@dogs << self;
