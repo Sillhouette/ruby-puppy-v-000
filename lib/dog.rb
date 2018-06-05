@@ -1,21 +1,21 @@
 class Dog
 
-  @@dogs = [];
+  @@all = [];
 
   attr_accessor :name
 
   def initialize(name)
     @name = name;
 
-    @@dogs << self;
+    @@all << self;
   end
 
   def self.dogs
-    @@dogs.each {|dog| puts dog.name};
+    @@all.each {|dog| puts dog.name};
   end
 
   def self.clear_all
-    @@dogs.clear;
+    @@all.clear;
   end
 
 end
