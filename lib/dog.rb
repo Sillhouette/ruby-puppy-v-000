@@ -11,7 +11,7 @@ class Dog
   end
 
   def self.dogs
-    @@dogs;
+    @@dogs.each {|dog| puts dog.name}
   end
 
 end
